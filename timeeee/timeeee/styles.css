@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 16.66% 50px;
+    width: 100%;
+}
+
+article {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.timeline__nav {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    transition: top .3s ease-out;
+}
+
+.timeline__nav ul {
+    list-style: none;
+    list-style-position: inside;
+    margin: 15px 0;
+}
+
+.timeline__nav li {
+    margin: 15px 0;
+    padding-left: 0;
+    list-style-type: none;
+    /* color: #bfc1c3; */
+    /* border-bottom: 1px dotted rgba(0, 0, 0, 0.3); */
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+/* .timeline__nav li.active {
+    font-weight: bold;
+    color: #f94125;
+    border-bottom: 1px dotted transparent; 
+    transform: scale(1.2);
+} */
+
+/* .timeline__nav btn:hover {
+    color: blue; !important
+} */
+
+/* Add this style for the milestone cards */
+.milestone-card {
+    background-color: #ffffff;
+    border: 1px solid #1c0b55;
+    border-radius: 8px;
+    padding: 20px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    /* for dotted line */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.milestone-card:hover {
+    transform: scale(1.05);
+}
+
+.milestone-image {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+
+     /* for dotted line */
+
+     border-right: 1px dotted black;
+     padding-right: 20px;
+}
+
+.milestone-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.milestone-text {
+    flex: 2;
+
+      /* for dotted line */
+    flex: 2;
+    padding-left: 20px;
+}
+
+.milestone-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.milestone-text p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+/* .btn :hover{
+  color: red;
+} */
+
+.btn-outline{
+  color: #4fbfa8;
+  /* color: red; */
+  background-color: #ffffff;
+  border-color: #4fbfa8;
+    /* border-color: red; */
+  font-weight: bold;
+  border-radius: 8px;
+  letter-spacing: 0.05em;
+  padding: 15px;
+}
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline :focus,
+.btn-outline.active {
+  background: #4fbfa8;
+  color: #ffffff;
+  border-color: #4fbfa8;
+  
+}
+/* FOR READ MORE */
+
+/* Add this style for the full content and read more link */
+.milestone-text .full-text {
+    display: none; /* Hide the full content by default */
+    margin-top: 10px;
+}
+
+.milestone-text .read-more {
+    color: #f94125;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.location-button{
+    display: block;
+    margin-top: 25px;
+    
+}
+.fa-location-dot{
+    /* padding: 10px; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.name1{
+    float: left;
+    display: inline;
+    margin-right: 20px;
+
+}
+.name2{
+    float: left;
+    align-items: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+ /* FOR Dotted line */
+
+
+
+/*  Media query for mobile screens */
+/* @media (max-width: 720px) {
+
+    .timeline{
+      display: flex;
+    }
+    .timeline__nav{
+    
+        flex-direction: row-reverse;
+    }
+} */
+
+/* @media (max-width: 720px){
+    .wrapper{
+        margin-right: 10px;
+    }
+    .milestone-text{
+        color: aqua;
+    }
+} */
